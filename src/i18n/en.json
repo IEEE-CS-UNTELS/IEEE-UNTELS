@@ -40,6 +40,7 @@
     "CONTACT_FORM_ERROR_TIMEOUT": "The server took too long to respond. Please try again.",
     "CONTACT_FORM_ERROR_INTERNAL": "An internal error has occurred. Please try again.",
     "CONTACT_FORM_ERROR_UNKNOWN": "An unknown error has occurred. Please try again.",
-    "CONTACT_FORM_ERROR_INVALID_RESPONSE": "The server's response is not valid. Please try again."
+    "CONTACT_FORM_ERROR_INVALID_RESPONSE": "The server's response is not valid. Please try again.",
+    "PREFOOTER_VIDEO_TITLE" : "Discover the IEEE UNTELS Student Branch"
 }
 
