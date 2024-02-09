@@ -1,15 +1,18 @@
 ---
 import BentoItem from "./BentoItem.astro";
+import { getI18N } from "@/i18n/index";
+const {currentLocale} = Astro
+const i18n = getI18N({currentLocale});
 ---
 
 <section
   class={`
   w-full max-w-[1400px]
   grid lg:grid-cols-10 auto-rows-[30rem] gap-4
-  mx-auto p-20
+  mx-auto p-6 md:p-12 lg:p-20
   `}
 >
-  <BentoItem class="col-span-10 lg:col-span-6" title="CAS: Unidad Organizativa">
+  <BentoItem class="col-span-10 lg:col-span-6" title={i18n.BENTO_TITLE_CS}>
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
@@ -18,9 +21,15 @@ import BentoItem from "./BentoItem.astro";
       style="background-image: url('/tech-blue.jpg');"
     >
     </div>
-    <p slot="content" class="max-w-xl"></p>
+    <p 
+      slot="content" 
+      class="max-w-xl text-base md:text-lg"
+      set:html={i18n.BENTO_CONTENT_1}
+      ></p>
   </BentoItem>
-  <BentoItem class="col-span-10 lg:col-span-4" title="CAS: Unidad Organizativa">
+  <BentoItem 
+    class="col-span-10 lg:col-span-4" 
+    title={i18n.BENTO_TITLE_RAS}>
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
