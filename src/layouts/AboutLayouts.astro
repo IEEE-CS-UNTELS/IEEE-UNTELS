@@ -1,0 +1,41 @@
+---
+import Footer from "@/components/Footer.astro";
+import Layout from "../components/Layout.astro";
+import Logo from "../components/Logo.astro";
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout  title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
+
+    <main class="text-center sm:text-left">
+        <h1 class="mx-auto mt-28 mb-10 text-wrap text-center text-4xl font-semibold tracking-wide">¿Quiénes somos?</h1> 
+
+        <p class="text-center">La Rama Estudiantil IEEE UNTELS es una organización sin fines de lucro, formada por estudiantes de la Universidad Tecnológica de El Salvador (UTEC) apasionados por la tecnología y la innovación. Somos parte de la red global del IEEE, la asociación profesional más grande del mundo dedicada al avance de la tecnología.
+        </p> 
+        
+        <h2 class="mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide">¿Qué hacemos?</h2> 
+        
+        <p class="text-center m-10">Nuestro objetivo principal es promover el desarrollo profesional y personal de nuestros miembros a través de diversas actividades, tales como:
+        </p> 
+        <ul class="w-25 m-10"> 
+            <li>
+                <p>Talleres y cursos:</p>
+                Ofrecemos talleres y cursos prácticos sobre tecnologías emergentes, software de última generación y habilidades técnicas relevantes para el mercado laboral actual.</li> 
+            <li>
+                <p class="mt-4">Conferencias y eventos:</p>
+                Organizamos conferencias, charlas y eventos de networking con profesionales de la industria, líderes tecnológicos e investigadores.</li> 
+            <li>
+                <p class="mt-4">Proyectos de investigación:</p>
+                Apoyamos el desarrollo de proyectos de investigación innovadores en áreas como electrónica, telecomunicaciones, robótica, bioingeniería e informática.</li> 
+            <li>
+                <p class="mt-4">Competiciones:</p>
+                Participamos en competiciones internacionales de IEEE, brindando a nuestros miembros la oportunidad de poner a prueba sus habilidades y conocimientos.</li> 
+            <li>
+                <p class="mt-4">Mentoring:</p> 
+                Ofrecemos programas de mentoring para conectar a estudiantes con profesionales experimentados que puedan guiarlos en su desarrollo profesional.</li> 
+        </ul> 
+    </main>
+    <Footer />
+</Layout>
