@@ -1,6 +1,6 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "./Footer.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
 import "@fontsource-variable/onest";
 /* import { getLangFromUrl } from "../i18n/utils";
  */
@@ -107,5 +107,6 @@ const { description, title } = Astro.props;
         }
       }
     </style>
+    <Footer/>
   </body>
 </html>

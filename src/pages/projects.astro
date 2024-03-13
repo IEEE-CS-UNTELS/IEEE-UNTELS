@@ -1,5 +1,13 @@
 ---
-import ProjectsLayouts from '../layouts/ProjectsLayouts.astro'
+import Layout from '@/layouts/Layout.astro'
+import ProjectsC from '@/components/Projects.astro'
 ---
 
-<ProjectsLayouts></ProjectsLayouts>
+
+<Layout  title="Proyectos IEEE" description="Proectos tecnologicos realizados en IEEE UNTELS 2024">
+    <main>
+        <div> Proyectos 2024</div>
+        <ProjectsC/>
+        
+    </main>
+</Layout>
