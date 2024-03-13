@@ -1,8 +1,5 @@
 ---
 import BentoItem from "./BentoItem.astro";
-import { getI18N } from "@/i18n/index";
-const {currentLocale} = Astro
-const i18n = getI18N({currentLocale});
 ---
 
 <section
@@ -12,7 +9,7 @@ const i18n = getI18N({currentLocale});
   mx-auto p-6 md:p-12 lg:p-20
   `}
 >
-  <BentoItem class="col-span-10 lg:col-span-6" title={i18n.BENTO_TITLE_CS}>
+  <BentoItem class="col-span-10 lg:col-span-6" title="Hola">
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
@@ -24,12 +21,12 @@ const i18n = getI18N({currentLocale});
     <p 
       slot="content" 
       class="max-w-xl text-base md:text-lg"
-      set:html={i18n.BENTO_CONTENT_1}
+      set:html="html"
       ></p>
   </BentoItem>
   <BentoItem 
     class="col-span-10 lg:col-span-4" 
-    title={i18n.BENTO_TITLE_RAS}>
+    title="gaaaaa">
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
