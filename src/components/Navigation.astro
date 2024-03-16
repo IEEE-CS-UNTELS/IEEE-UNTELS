@@ -1,29 +1,104 @@
+<!-- <style>
+  .center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px; /* Ajusta el margen según sea necesario */
+  }
 
-<div class="max-w-7xl mx-auto flex items-center justify-between gap-16">
-    <a href="/" class="col-span-1"> </a>
-    <nav class="col-span-2 justify-self-center">
-      <a
-        href="/about"
-        class="text-lg font-bold text-white-700 hover:text-yellow-600 px-4"
-        >Nosotros</a
-      >
-      <a
-        href="/projects"
-        class="text-lg font-bold text-white-700 hover:text-yellow-600 px-4"
-        >Proyectos</a
-      >
-      <a
-        href="/contact"
-        class="text-lg font-bold text-white-700 hover:text-yellow-600 px-4"
-        >Contactanos</a
-      >
-    </nav>
-    <a
-      href="/"
-      class="border rounded-full inline-block border-white px-4 py-2
-        justify-self-end hover:bg-white hover:text-black duration-300"
-    >
-      IEEE: OU's Estudiantil UNTELS
+  nav img {
+    width: 180px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 60px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y los enlaces */
+  }
+
+  nav a {
+    margin: 5px; /* Ajusta el espacio entre elementos según sea necesario */
+    padding: 8px 15px; /* Ajusta el espacio interno según sea necesario */
+    font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
+    text-decoration: none;
+    color: #000; /* Cambia el color de texto según sea necesario */
+    border: 1px solid #000; /* Cambia el estilo del borde según sea necesario */
+    border-radius: 20px; /* Ajusta la curvatura del borde según sea necesario */
+    transition: all 0.3s ease; /* Agrega transición para un cambio suave */
+  }
+
+  nav a:hover {
+    background-color: #eaa505; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color de texto al pasar el mouse */
+  }
+
+  /* Media Query para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column; /* Cambia la dirección de los elementos a columna */
+      align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    nav img {
+      margin-right: 0; /* Ajusta el margen de la imagen en dispositivos móviles */
+      margin-bottom: 10px; /* Ajusta el espacio entre la imagen y los enlaces */
+    }
+  }
+</style> -->
+
+<!-- <div class="">
+  <nav class="center dark:bg-yellow-600">
+    <a href="/"><img src="./ieee_untels_rgb_stacked_blue.png" alt="Universidad Nacional Tecnologica de Lima Sur" class="w-40 h-17 hover:opacity-75" />
     </a>
+    <a href="/about">Nosotros</a>
+    <a href="/projects">Proyectos</a>
+    <a href="/contact">Contactanos</a>
+    <a href="/" class="border rounded-full">IEEE: Capitulos</a>
+  </nav>
+</div>
+
+ -->
+
+ <nav class="flex flex-row items-center justify-center text-center dark:bg-yellow-600" >
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./ieee_untelsc.png" class="h-10 mr-4" alt="Ieee Untels Logo" />
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="/" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Inicio</a>
+        </li>
+        <li>
+          <a href="/about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nosotros</a>
+        </li>
+        <li>
+          <a href="/members" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Miembros</a>
+        </li>
+        <li>
+          <a href="/chapters" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Capitulos</a>
+        </li>
+        <li>
+          <a href="/events" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Eventos</a>
+        </li>
+        <li>
+          <a href="/projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Proyectos</a>
+        </li>
+        <li>
+          <a href="/join" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Unete</a>
+        </li>
+      </ul>
+    </div>
   </div>
+</nav>
+
