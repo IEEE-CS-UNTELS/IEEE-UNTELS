@@ -1,78 +1,16 @@
-<!-- <style>
-  .center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px; /* Ajusta el margen según sea necesario */
-  }
-
-  nav img {
-    width: 180px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: 60px; /* Ajusta el tamaño de la imagen según sea necesario */
-    margin-right: 10px; /* Ajusta el espacio entre la imagen y los enlaces */
-  }
-
-  nav a {
-    margin: 5px; /* Ajusta el espacio entre elementos según sea necesario */
-    padding: 8px 15px; /* Ajusta el espacio interno según sea necesario */
-    font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
-    text-decoration: none;
-    color: #000; /* Cambia el color de texto según sea necesario */
-    border: 1px solid #000; /* Cambia el estilo del borde según sea necesario */
-    border-radius: 20px; /* Ajusta la curvatura del borde según sea necesario */
-    transition: all 0.3s ease; /* Agrega transición para un cambio suave */
-  }
-
-  nav a:hover {
-    background-color: #eaa505; /* Cambia el color de fondo al pasar el mouse */
-    color: #fff; /* Cambia el color de texto al pasar el mouse */
-  }
-
-  /* Media Query para dispositivos móviles */
-  @media only screen and (max-width: 600px) {
-    nav {
-      flex-direction: column; /* Cambia la dirección de los elementos a columna */
-      align-items: center; /* Centra los elementos en el eje transversal */
-    }
-
-    nav img {
-      margin-right: 0; /* Ajusta el margen de la imagen en dispositivos móviles */
-      margin-bottom: 10px; /* Ajusta el espacio entre la imagen y los enlaces */
-    }
-  }
-</style> --><!-- <div class="">
-  <nav class="center dark:bg-yellow-600">
-    <a href="/"><img src="./ieee_untels_rgb_stacked_blue.png" alt="Universidad Nacional Tecnologica de Lima Sur" class="w-40 h-17 hover:opacity-75" />
-    </a>
-    <a href="/about">Nosotros</a>
-    <a href="/projects">Proyectos</a>
-    <a href="/contact">Contactanos</a>
-    <a href="/" class="border rounded-full">IEEE: Capitulos</a>
-  </nav>
-</div>
-
- -->
 <nav
-  class="isolate h-desktopNavbar w-full justify-between bg-opacity-50 px-4 pt-5 md:flex lg:px-16 flex h-mobileNavbar items-center pl-5 pr-4"
+  class="isolate h-desktopNavbar w-screen justify-between bg-opacity-50 px-2 pt-2 md:flex lg:px-16 flex h-mobileNavbar items-center pl-5 pr-4"
 >
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
-    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="./ieee_untelsc.png" class="h-10 mr-4" alt="Ieee Untels Logo" />
+    <a href="/" class="flex items-center space-x-5 rtl:space-x-reverse">
+      <img src="./ieee_untelsc.png" class="h-12 mr-10" alt="Ieee Untels Logo" />
     </a>
     <button
       data-collapse-toggle="navbar-default"
       type="button"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-yellow-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       aria-controls="navbar-default"
       aria-expanded="false"
     >
@@ -94,7 +32,7 @@
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul
-        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-red-600 md:dark:bg-gray-900 dark:border-gray-700"
+        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white md:dark:bg-opacity-5 dark:border-gray-700"
       >
         <li>
           <a
@@ -106,42 +44,42 @@
         <li>
           <a
             href="/about"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            class="block py-2 px-3 text-yellow-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Nosotros</a
           >
         </li>
         <li>
           <a
             href="/members"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            class="block py-2 px-3 text-yellow-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Miembros</a
           >
         </li>
         <li>
           <a
             href="/chapters"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            class="block py-2 px-3 text-yellow-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Capitulos</a
           >
         </li>
         <li>
           <a
             href="/events"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            class="block py-2 px-3 text-yellow-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Eventos</a
           >
         </li>
         <li>
           <a
             href="/projects"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            class="block py-2 px-3 text-yellow-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Proyectos</a
           >
         </li>
         <li>
           <a
             href="/join"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            class="block py-2 px-3 text-yellow-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Unete</a
           >
         </li>
