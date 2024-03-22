@@ -1,0 +1,50 @@
+---
+interface Props {
+  class?: string;
+  nombre?: string;
+  apellido?: string;
+  cargo?: string;
+}
+const { nombre, apellido, cargo } = Astro.props;
+---
+
+<article
+  class={`
+    ${Astro.props.class}
+    col-span-5
+    relative rounded-xl
+    backdrop-blur-md
+    border border-black/10
+    shadow-inner shadow-white/10
+    overflow-hidden
+    group
+  `}
+>
+  <div class="bg-blue-500 py-8">
+    <!-- Cambio de color de fondo a azul -->
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center mb-6 text-yellow-500">
+        {nombre}
+      </h2>
+      <!-- Cambia del color de las letras  a amarillo -->
+      <div class="swiper-container">
+        <!-- Miembro #1 -->
+        <div class="swiper-slide">
+          <div
+            class="bg-white rounded-full overflow-hidden shadow-lg mx-auto w-36 h-36"
+          >
+            <slot name="image" />
+          </div>
+          <p class="text-center mt-4 text-yellow-500 font-semibold">
+            {apellido}
+          </p>
+          <p class="text-center text-yellow-500">{cargo}</p>
+        </div>
+      </div>
+      <!-- Botones de navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <slot name="content" />
+  </div>
+</article>

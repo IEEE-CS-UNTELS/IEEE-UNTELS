@@ -9,7 +9,7 @@ import BentoItem from "./BentoItem.astro";
   mx-auto p-6 md:p-12 lg:p-20
   `}
 >
-  <BentoItem class="col-span-10 lg:col-span-6" title="Hola">
+  <BentoItem class="col-span-10 lg:col-span-6" title="Primer tarjetita">
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
@@ -18,15 +18,9 @@ import BentoItem from "./BentoItem.astro";
       style="background-image: url('/tech-blue.jpg');"
     >
     </div>
-    <p 
-      slot="content" 
-      class="max-w-xl text-base md:text-lg"
-      set:html="html"
-      ></p>
+    <p slot="content" class="max-w-xl text-base md:text-lg" set:html="html" />
   </BentoItem>
-  <BentoItem 
-    class="col-span-10 lg:col-span-4" 
-    title="gaaaaa">
+  <BentoItem class="col-span-10 lg:col-span-4" title="gaaaaa">
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0

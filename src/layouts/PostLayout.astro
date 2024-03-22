@@ -19,8 +19,8 @@ const { description, title } = Astro.props;
     <slot name="preload" />
   </head>
 
+  <BaseHead  />
   <body>
-    <BaseHead  />
     <slot />
     <style is:global>
       :root {
@@ -105,6 +105,6 @@ const { description, title } = Astro.props;
         }
       }
     </style>
-    <Footer />
   </body>
+  <Footer />
 </html>
