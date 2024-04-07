@@ -3,19 +3,20 @@ import ChaptersItem from "./ChaptersItem.astro";
 ---
 
 
-<section class="flex flex-row gap-8 mx-auto p-6 md:p-12 lg:p-20 items-center">
-    <div class="flex flex-row flex-nowrap gap-4">
-
+<section class="grid grid-rows-2 gap-8 mx-auto p-6 md:p-12 lg:p-20">
+  <div class="grid grid-rows-4 grid-flow-col gap-4">
+   
   <ChaptersItem
-    class="w-1/4 lg:w-1/4"
+  
+    class="w-[579px]"
+
     capitulo="WIE"
     nombre=" Women in Engineering"
   >
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full bg-yellow-600
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
     >
     </div>
 
@@ -23,45 +24,42 @@ import ChaptersItem from "./ChaptersItem.astro";
   </ChaptersItem>
 
   <ChaptersItem
-  class="w-1/4 lg:w-1/4"
+  class="w-[579px]"
     capitulo="AP-S"
     nombre="Antennas & Propagation Society"
   >
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full bg-yellow-600
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
     >
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg" />
   </ChaptersItem>
   <ChaptersItem
-  class="w-1/4 lg:w-1/4"
+  class="w-[579px]"
     capitulo="EMBS"
     nombre="Engineering in Medicine & Biology Society"
   >
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full bg-yellow-600
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
     >
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg"/>
   </ChaptersItem>
   
- <ChaptersItem class="w-1/4 lg:w-1/4"
+ <ChaptersItem class="w-[579px]"
  capitulo="IAS "
  nombre="Industry Applications Society"
  >
  <div
  slot="image"
  class="background transition-scale absolute bottom-0 left-0 top-0
--z-10 h-full w-full bg-yellow-600
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+ -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
 >
 </div>
 
@@ -69,15 +67,14 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
 
  </ChaptersItem>
 
- <ChaptersItem class="w-1/4 lg:w-1/4"
+ <ChaptersItem class="w-[579px]"
  capitulo="CAS "
  nombre="Circuits & Systems Society"
  >
  <div
  slot="image"
  class="background transition-scale absolute bottom-0 left-0 top-0
--z-10 h-full w-full bg-yellow-600
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
 >
 </div>
 
@@ -85,15 +82,14 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
 
  </ChaptersItem>
 
- <ChaptersItem class="w-1/4 lg:w-1/4"
+ <ChaptersItem class="w-[579px]"
  capitulo="PES"
  nombre=" Power & Energy Society"
  >
  <div
  slot="image"
  class="background transition-scale absolute bottom-0 left-0 top-0
--z-10 h-full w-full bg-yellow-600
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
 >
 </div>
 
@@ -101,15 +97,14 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
 
  </ChaptersItem>
 
- <ChaptersItem class="w-1/4 lg:w-1/4"
+ <ChaptersItem class="w-[579px]"
  capitulo="RAS "
  nombre="Robotics & Automation Society"
  >
  <div
  slot="image"
  class="background transition-scale absolute bottom-0 left-0 top-0
--z-10 h-full w-full bg-yellow-600
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+ -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
 >
 </div>
 
@@ -117,7 +112,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
 
  </ChaptersItem>
 
- <ChaptersItem class="w-1/4 lg:w-1/4"
+ <ChaptersItem class="w-[579px]"  
  capitulo="CS "
  nombre="Computer Society "
  
@@ -125,8 +120,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
  <div
  slot="image"
  class="background transition-scale absolute bottom-0 left-0 top-0
--z-10 h-full w-full bg-yellow-600
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
 >
 </div>
 
@@ -138,3 +132,4 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
 <script>
 
 </script>
+   

@@ -20,6 +20,8 @@ const { capitulo, nombre } = Astro.props;
     group
   `}
 >
+
+
   <div class="bg-navy  py-8">
     <!-- Cambio de color de fondo a azul -->
     <div class="container mx-auto px-4">
@@ -27,12 +29,14 @@ const { capitulo, nombre } = Astro.props;
         {capitulo}
       </h2>
       <!-- Cambia del color de las letras  a amarillo -->
-      <div class="swiper-container">
-        <!-- Capitulo #1 -->
-        <div class="swiper-slide">
-          <div
-            class="bg-white rounded-full overflow-hidden shadow-lg mx-auto w-36 h-36"
-          >
+      <div class="">
+        <!-- Miembro #1 -->
+        <div class="">
+          <div>
+          <div class="bg-gradient-to-r from-yellow-400 to-white rounded-square overflow-hidden shadow-2xl mx-auto w-48 h-48 flex items-center justify-center">
+           
+
+          
             <slot name="image" />
           </div>
           <p class="text-3xl font-semibold text-center mb-6 text-yellow-500">
