@@ -1,6 +1,25 @@
+---
+import InputForm from "./InputForm.astro"
+import ButtonSubmit from "./ButtonSubmit.astro"
+import SelectForm from "./SelectForm.astro"
+import TextAreaForm from "./TextAreaForm.astro"
+---
+<div class="h-40 lg:h-20"></div>
+<div class="flex flex-col items-center justify-center h-screen dark p-3">
+  <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6 mb-20 lg:mb-0">
+    <h2 class="text-2xl font-bold text-gray-200 mb-4">Unete a IEEE</h2>
 
+    <form class="flex flex-col">
 
+        <InputForm placeholder="tu nombre" typeInput="text"></InputForm>
+        <InputForm placeholder="email" typeInput="email"></InputForm>
+      
+        <SelectForm></SelectForm>
 
-<div >
+        <TextAreaForm placeholder="mensaje que quieras transmitir" name="feedback"></TextAreaForm>
 
+        <ButtonSubmit></ButtonSubmit>
+    
+    </form>
+  </div>
 </div>
