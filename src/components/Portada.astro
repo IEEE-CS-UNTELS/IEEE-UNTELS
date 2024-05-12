@@ -4,25 +4,30 @@ const imageUrl = "/bienvenido.jpg";
 ---
 
 <section
-  class="relative isolate overflow-hidden bg-white px-11 mt-1 py-24 sm:py-32 lg:px-8"
+  class="relative isolate overflow-hidden bg-white px-5 sm:px-11 py-12 sm:py-24 md:py-32 lg:px-8"
 >
-  <div class="mx-auto max-w-2xl lg:max-w-4xl">
-    <figure class="mt-10">
-      <figcaption class="mt-10">
-        <div class="mt-8 flex items-center justify-center space-x-3 text-base">
-          <p class="font-semibold text-black text-4xl">
+  <div class="mx-auto max-w-xl md:max-w-2xl lg:max-w-4xl">
+    <figure class="space-y-6">
+      <figcaption>
+        <!-- Primer Texto -->
+        <div class="text-center">
+          <p class="font-semibold text-black text-2xl md:text-4xl mt-10 md:mt-0">
             Bienvenidos a:
-            <br>
-            <span class="text-yellow-400 text-4xl">{title}</span>
-            <br>
+            <br />
+            <span class="text-yellow-400">{title}</span>
+            <br />
             Potenciando a los Innovadores del Futuro
           </p>
-          <img src={imageUrl} alt="Bienvenidos a IEEE Universidad Nacional Tecnologica de Lima Sur" class="mx-auto w-full max-w-lg rounded-lg shadow-lg">
-
         </div>
-
-        <div class="mt-8 flex items-center justify-center space-x-3 text-base">
-          <p class="font-semibold text-black text-2xl">
+        <!-- Imagen -->
+        <img
+          src={imageUrl}
+          alt="Bienvenidos a IEEE Universidad Nacional Tecnologica de Lima Sur"
+          class="mx-auto w-full max-w-md md:max-w-lg rounded-lg shadow-lg"
+        />
+        <!-- Segundo Texto -->
+        <div class="text-center">
+          <p class="font-semibold text-black  mt-10 text-xl md:text-2xl">
             Únete a nosotros para explorar el mundo de la tecnología e
             ingeniería en la Universidad Nacional Tecnológica de Lima Sur.
           </p>
