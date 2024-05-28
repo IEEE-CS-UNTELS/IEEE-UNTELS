@@ -1,8 +1,6 @@
 ---
-import InputForm from "./InputForm.astro"
-import ButtonSubmit from "./ButtonSubmit.astro"
-import SelectForm from "./SelectForm.astro"
-import TextAreaForm from "./TextAreaForm.astro"
+import JoinInput from "./JoinInput.astro"
+import JoinButton from "./JoinButton.astro"
 ---
 <div class="h-40 lg:h-20"></div>
 <div class="flex flex-col items-center justify-center h-screen dark p-3">
@@ -10,16 +8,25 @@ import TextAreaForm from "./TextAreaForm.astro"
     <h2 class="text-2xl font-bold text-gray-200 mb-4">Únete a IEEE</h2>
 
     <form class="flex flex-col">
-
-        <InputForm placeholder="tu nombre" typeInput="text"></InputForm>
-        <InputForm placeholder="email" typeInput="email"></InputForm>
+        <JoinInput placeholder="tu nombre" typeInput="text"></JoinInput>
+        <JoinInput placeholder="email" typeInput="email"></JoinInput>
       
-        <SelectForm opcion="hola"></SelectForm>
+        <select class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" id="instituciones">
+          <option value="">elija alguna de nuestra especializaciones</option>
+          <option value="option-1">WIE(Women in Engineering)</option>
+          <option value="option-2">CAS(Circuits & Systems Society)</option>
+          <option value="option-3">AP-S(Antennas & Propagation Society)</option>
+          <option value="option-4">PES(Power & Energy Society)</option>
+          <option value="option-5">AP-S(Antennas & Propagation Society)</option>
+          <option value="option-6">EMBS(Engineering in Medicine & Biology Society)</option>
+          <option value="option-7">IAS(Industry Applications Society)</option>
+          <option value="option-8">CS(Computer Society)</option>
+        </select>
 
-        <TextAreaForm placeholder="mensaje que quieras transmitir" name="feedback"></TextAreaForm>
+        <textarea placeholder="mensaje que quieras transmitir" class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 resize-none h-20 sm:h-40" name="feedback"></textarea>
+        
+        <JoinButton typeButton="submit" textButton="Enviar"></JoinButton>
 
-        <ButtonSubmit></ButtonSubmit>
-    
     </form>
   </div>
 </div>
