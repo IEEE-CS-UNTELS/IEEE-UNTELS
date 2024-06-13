@@ -1,9 +1,8 @@
 ---
 interface Props {
   class?: string;
-   capitulo?: string; 
-   nombre?: string;
- 
+  capitulo?: string;
+  nombre?: string;
 }
 const { capitulo, nombre } = Astro.props;
 ---
@@ -20,9 +19,7 @@ const { capitulo, nombre } = Astro.props;
     group
   `}
 >
-
-
-  <div class="bg-navy  py-8">
+  <div class="bg-navy py-8">
     <!-- Cambio de color de fondo a azul -->
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-semibold text-center mb-6 text-yellow-500">
@@ -33,19 +30,20 @@ const { capitulo, nombre } = Astro.props;
         <!-- Miembro #1 -->
         <div class="">
           <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/channel/UCW8NUGcR9yTC-2CrLU_QZ-w" frameborder="0" allowfullscreen></iframe>
-          
-
-          
+            <iframe width="560" height="315" src="https://www.youtube.com/channel/UCW8NUGcR9yTC-2CrLU_QZ-w" frameborder="0" allowfullscreen></iframe>          
             <slot name="image" />
+            <div
+              class="bg-gradient-to-r from-yellow-400 to-white rounded-square overflow-hidden shadow-2xl float-left w-32 h-32 flex flex-column items-center justify-center"
+            >
+              <slot name="image" />
+            </div>
+            <p class="text-3xl font-semibold text-center mb-6 text-yellow-500">
+              {nombre}
+            </p>
           </div>
-          <p class="text-3xl font-semibold text-center mb-6 text-yellow-500">
-            {nombre}
-          </p>
         </div>
       </div>
-     
+      <slot name="content" />
     </div>
-    <slot name="content" />
   </div>
 </article>

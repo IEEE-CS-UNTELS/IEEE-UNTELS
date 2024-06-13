@@ -2,7 +2,6 @@
 import ChaptersItem from "./ChaptersItem.astro";
 ---
 
-
 <section class="grid grid-rows-2 gap-8 mx-auto p-6 md:p-12 lg:p-20">
   <div class="grid grid-rows-4 grid-flow-col gap-4 space-y-4 mt-20  ">
    
@@ -17,12 +16,25 @@ import ChaptersItem from "./ChaptersItem.astro";
     <source src="https://youtube.com/shorts/K7Q7EWXBQLg?feature=share.mp4" type="video/mp4">
     Tu navegador no admite el formato de video.
 </video>
+<div class="h-8"></div>
+<section
+  class="w-full max-w-[1400px]
+grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+mx-auto p-6 md:p-12 lg:p-20"
+>
+  <ChaptersItem class="w-[579px]" capitulo="WIE" nombre=" Women in Engineering">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    >
+    </div>
 
-    <p slot="content" class="max-w-xl text-base md:text-lg"/>
+    <p slot="content" class="max-w-xl text-base md:text-lg"></p>
   </ChaptersItem>
 
   <ChaptersItem
-  class="w-[579px]"
+    class="w-[579px]"
     capitulo="AP-S"
     nombre="Antennas & Propagation Society"
   >
@@ -31,10 +43,10 @@ import ChaptersItem from "./ChaptersItem.astro";
     Tu navegador no admite el formato de video.
 </video>
 
-    <p slot="content" class="max-w-xl text-base md:text-lg" />
+    <p slot="content" class="max-w-xl text-base md:text-lg"></p>
   </ChaptersItem>
   <ChaptersItem
-  class="w-[579px]"
+    class="w-[579px]"
     capitulo="EMBS"
     nombre="Engineering in Medicine & Biology Society"
   >
@@ -43,9 +55,8 @@ import ChaptersItem from "./ChaptersItem.astro";
     Tu navegador no admite el formato de video.
 </video>
 
-    <p slot="content" class="max-w-xl text-base md:text-lg"/>
-  </ChaptersItem>
-  
+    <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+  </ChaptersItem>  
  <ChaptersItem class="w-[579px]"
  capitulo="IAS "
  nombre="Industry Applications Society"
@@ -56,10 +67,20 @@ import ChaptersItem from "./ChaptersItem.astro";
     Tu navegador no admite el formato de video.
 </video>
 
-<p slot="content" class="max-w-xl text-base md:text-lg"/>
+  <ChaptersItem
+    class="w-[579px]"
+    capitulo="IAS "
+    nombre="Industry Applications Society"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+ -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    >
+    </div>
 
- </ChaptersItem>
-
+    <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+  </ChaptersItem>
  <ChaptersItem class="w-[579px]"
  capitulo="CAS "
  nombre="Circuits & Systems Society"
@@ -71,7 +92,20 @@ import ChaptersItem from "./ChaptersItem.astro";
 
 <p slot="content" class="max-w-xl text-base md:text-lg"/>
 
- </ChaptersItem>
+  <ChaptersItem
+    class="w-[579px]"
+    capitulo="CAS "
+    nombre="Circuits & Systems Society"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+  </ChaptersItem>
 
  <ChaptersItem class="w-[579px]"
  capitulo="PES"
@@ -83,8 +117,20 @@ import ChaptersItem from "./ChaptersItem.astro";
 </video>
 
 <p slot="content" class="max-w-xl text-base md:text-lg"/>
+  <ChaptersItem
+    class="w-[579px]"
+    capitulo="PES"
+    nombre=" Power & Energy Society"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    >
+    </div>
 
- </ChaptersItem>
+    <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+  </ChaptersItem>
 
  <ChaptersItem class="w-[579px]"
  capitulo="RAS "
@@ -96,8 +142,20 @@ import ChaptersItem from "./ChaptersItem.astro";
 </video>
 
 <p slot="content" class="max-w-xl text-base md:text-lg"/>
+  <ChaptersItem
+    class="w-[579px]"
+    capitulo="RAS "
+    nombre="Robotics & Automation Society"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+ -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    >
+    </div>
 
- </ChaptersItem>
+    <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+  </ChaptersItem>
 
  <ChaptersItem class="w-[579px]"  
  capitulo="CS "
@@ -108,13 +166,16 @@ import ChaptersItem from "./ChaptersItem.astro";
   <source src="https://youtube.com/shorts/93eZ-aHc984.mp4" type="video/mp4">
   Tu navegador no admite el formato de video.
 </video>
+  <ChaptersItem class="w-[579px]" capitulo="CS " nombre="Computer Society ">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    >
+    </div>
 
-<p slot="content" class="max-w-xl text-base md:text-lg"/>
+    <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+  </ChaptersItem>
 
- </ChaptersItem>
+  <script></script>
 </section>
-
-<script>
-
-</script>
-   
