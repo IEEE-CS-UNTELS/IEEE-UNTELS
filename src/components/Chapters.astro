@@ -1,13 +1,14 @@
 ---
 import ChaptersItem from "./ChaptersItem.astro";
+import { YouTube } from "astro-embed";
 ---
 
 <section class="grid grid-rows-2 gap-8 mx-auto p-6 md:p-12 lg:p-20">
   <div class="grid grid-rows-4 grid-flow-col gap-4 space-y-4 mt-20">
     <section
       class="w-full max-w-[1400px]
-grid lg:grid-cols-10 auto-rows-[30rem] gap-4
-mx-auto p-6 md:p-12 lg:p-20"
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20"
     >
       <!-- WIEE -->
       <ChaptersItem
@@ -20,6 +21,9 @@ mx-auto p-6 md:p-12 lg:p-20"
           class="background transition-scale absolute bottom-0 left-0 top-0
         -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
         >
+          <YouTube
+            id="C_q8QtOGdQs"
+          />
         </div>
 
         <p slot="content" class="max-w-xl text-base md:text-lg"></p>
@@ -30,14 +34,18 @@ mx-auto p-6 md:p-12 lg:p-20"
         capitulo="AP-S"
         nombre="Antennas & Propagation Society"
       >
-        <video controls>
-          <source
-            src="https://youtube.com/shorts/dPQd4AazIA0.mp4"
-            type="video/mp4"
-          />
-          Tu navegador no admite el formato de video.
-        </video>
+        <div
+          slot="image"
+          class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+        >
+        <YouTube
+            id="TtRtkTzHVBU"
+            poster="https://images-assets.nasa.gov/image/0302063/0302063~medium.jpg"
+            title="Tatiana"
 
+          />
+        </div>
         <p slot="content" class="max-w-xl text-base md:text-lg"></p>
       </ChaptersItem>
       <!-- EMBS -->
@@ -46,10 +54,12 @@ mx-auto p-6 md:p-12 lg:p-20"
         capitulo="EMBS"
         nombre="Engineering in Medicine & Biology Society"
       >
-        <video controls>
-          <source src="https://youtu.be/Ss4kRG1fzrQ.mp4" type="video/mp4" />
-          Tu navegador no admite el formato de video.
-        </video>
+        <div
+          slot="image"
+          class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+        >
+        </div>
 
         <p slot="content" class="max-w-xl text-base md:text-lg"></p>
       </ChaptersItem>
