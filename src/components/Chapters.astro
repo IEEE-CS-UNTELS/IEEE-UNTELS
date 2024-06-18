@@ -3,26 +3,27 @@ import ChaptersItem from "./ChaptersItem.astro";
 import { YouTube } from "astro-embed";
 ---
 
-<section class="grid grid-rows-2 gap-8 mx-auto p-6 md:p-12 lg:p-20">
-  <div class="grid grid-rows-4 grid-flow-col gap-4 space-y-4 mt-20">
+<section class="grid grid-rows-2 gap-x-12 gap-y-8 mx-auto p-6 md:p-12 lg:p-20">
+  <div class="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-8 mt-10 space-x-3">
     <section
       class="w-full max-w-[1400px]
-    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    grid lg:grid-cols-10 auto-rows-[20rem] gap-x-12 gap-y-8
     mx-auto p-6 md:p-12 lg:p-20"
     >
       <!-- WIEE -->
       <ChaptersItem
-        class="w-[579px]"
-        capitulo="WIE"
-        nombre=" Women in Engineering"
+        class="w-[579px]" 
+
       >
         <div
           slot="image"
-          class="background transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
         >
           <YouTube
-            id="x4rLJxm8d20"
+            id="K7Q7EWXBQLg"
+            params="start=57&end=75" 
+            poster="https://th.bing.com/th/id/OIG2.wfocaMi1n3HAcO5TjjWz?w=1024&h=1024&rs=1&pid=ImgDetMain"
+            title="WIE: Women In Engineering"
           />
         </div>
 
@@ -31,18 +32,16 @@ import { YouTube } from "astro-embed";
       <!-- APS -->
       <ChaptersItem
         class="w-[579px]"
-        capitulo="AP-S"
-        nombre="Antennas & Propagation Society"
+        
       >
         <div
           slot="image"
-          class="background transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
         >
         <YouTube
-            id="vciznWvWzPE"
-            poster="https://images-assets.nasa.gov/image/0302063/0302063~medium.jpg"
-            title="Tatiana"
+            id="dPQd4AazIA0"
+            poster="https://th.bing.com/th/id/OIG1.xJPWLPoWRTrpAbMsSfkn?pid=ImgGn"
+            title="AP-S: Antennas & Propagation Society"
 
           />
         </div>
@@ -51,14 +50,17 @@ import { YouTube } from "astro-embed";
       <!-- EMBS -->
       <ChaptersItem
         class="w-[579px]"
-        capitulo="EMBS"
-        nombre="Engineering in Medicine & Biology Society"
+       
       >
         <div
           slot="image"
-          class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
         >
+        <YouTube
+            id="Ss4kRG1fzrQ"
+            poster="https://th.bing.com/th/id/OIG3.MCNgyEb7G1GFameHYDUX?pid=ImgGn"
+            title="EMBS: Engineering in Medicine & Biology Society"
+          />
         </div>
 
         <p slot="content" class="max-w-xl text-base md:text-lg"></p>
@@ -66,14 +68,17 @@ import { YouTube } from "astro-embed";
       <!-- IAS -->
       <ChaptersItem
         class="w-[579px]"
-        capitulo="IAS "
-        nombre="Industry Applications Society"
+        
       >
         <div
           slot="image"
-          class="background transition-scale absolute bottom-0 left-0 top-0
--z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
         >
+        <YouTube
+            id="39_BPJBv9yg"
+            poster="https://th.bing.com/th/id/OIG4.0RZ4HANBHNDreQ44NR9r?pid=ImgGn"
+            title="IAS: Industry Applications Society"
+          />
         </div>
 
         <p slot="content" class="max-w-xl text-base md:text-lg"></p>
@@ -81,14 +86,17 @@ import { YouTube } from "astro-embed";
       <!-- CAS -->
       <ChaptersItem
         class="w-[579px]"
-        capitulo="CAS "
-        nombre="Circuits & Systems Society"
+        
       >
         <div
           slot="image"
-          class="background transition-scale absolute bottom-0 left-0 top-0
-  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
         >
+        <YouTube
+            id="bBOPJrMYa-U"
+            poster="https://th.bing.com/th/id/OIG2.Twg6O19RyidEK3t5mNdk?w=1024&h=1024&rs=1&pid=ImgDetMain"
+            title="CAS: Circuits & Systems Society"
+          />
         </div>
 
         <p slot="content" class="max-w-xl text-base md:text-lg"></p>
@@ -96,25 +104,53 @@ import { YouTube } from "astro-embed";
       <!-- RAS -->
       <ChaptersItem
         class="w-[579px]"
-        capitulo="RAS "
-        nombre="Robotics & Automation Society"
+        
       >
         <div
           slot="image"
-          class="background transition-scale absolute bottom-0 left-0 top-0
- -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
         >
+        <YouTube
+            id="v0U6N-NbYSI"
+            poster="https://th.bing.com/th/id/OIG1.RMggfFlSzZ3MmpQuyvB4?w=1024&h=1024&rs=1&pid=ImgDetMain"
+            title="RAS: Robotics & Automation Society"
+          />
         </div>
 
         <p slot="content" class="max-w-xl text-base md:text-lg"></p>
       </ChaptersItem>
       <!-- CS -->
-      <ChaptersItem class="w-[579px]" capitulo="CS " nombre="Computer Society ">
+      <ChaptersItem 
+        class="w-[579px]" 
+        
+      >
         <div
           slot="image"
-          class="background transition-scale absolute bottom-0 left-0 top-0
-  -z-10 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
         >
+        <YouTube
+            id="93eZ-aHc984"
+            poster="https://th.bing.com/th/id/OIG3.iwj220lnDzesrUU0RCil?pid=ImgGn"
+            title="CS: Computer Society"
+          />
+        </div>
+
+        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+      </ChaptersItem>
+      <!-- PES -->
+      <ChaptersItem
+        class="w-[579px]"
+        
+      >
+        <div
+          slot="image"
+          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+        >
+        <YouTube
+            id="C_q8QtOGdQs"
+            poster="https://th.bing.com/th/id/OIG1.N8nnTFzZfN6EBIycSXxs?w=1024&h=1024&rs=1&pid=ImgDetMain"
+            title="PES: Power Energy Society" 
+          />
         </div>
 
         <p slot="content" class="max-w-xl text-base md:text-lg"></p>
