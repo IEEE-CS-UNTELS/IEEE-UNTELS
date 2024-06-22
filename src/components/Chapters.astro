@@ -3,158 +3,129 @@ import ChaptersItem from "./ChaptersItem.astro";
 import { YouTube } from "astro-embed";
 ---
 
-<section class="grid grid-rows-2 gap-x-12 gap-y-8 mx-auto p-6 md:p-12 lg:p-20">
-  <div class="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-8 mt-10 space-x-3">
-    <section
-      class="w-full max-w-[1400px]
-    grid lg:grid-cols-10 auto-rows-[20rem] gap-x-12 gap-y-8
-    mx-auto p-6 md:p-12 lg:p-20"
-    >
-      <!-- WIEE -->
-      <ChaptersItem
-        class="w-[579px]" 
-
-      >
-        <div
-          slot="image"
-          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
-        >
-          <YouTube
-            id="K7Q7EWXBQLg"
-            params="start=57&end=75" 
-            poster="https://th.bing.com/th/id/OIG2.wfocaMi1n3HAcO5TjjWz?w=1024&h=1024&rs=1&pid=ImgDetMain"
-            title="WIE: Women In Engineering"
-          />
-        </div>
-
-        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
-      </ChaptersItem>
-      <!-- APS -->
-      <ChaptersItem
-        class="w-[579px]"
-        
-      >
-        <div
-          slot="image"
-          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
-        >
-        <YouTube
-            id="dPQd4AazIA0"
-            poster="https://th.bing.com/th/id/OIG1.xJPWLPoWRTrpAbMsSfkn?pid=ImgGn"
-            title="AP-S: Antennas & Propagation Society"
-
-          />
-        </div>
-        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
-      </ChaptersItem>
-      <!-- EMBS -->
-      <ChaptersItem
-        class="w-[579px]"
-       
-      >
-        <div
-          slot="image"
-          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
-        >
-        <YouTube
-            id="Ss4kRG1fzrQ"
-            poster="https://th.bing.com/th/id/OIG3.MCNgyEb7G1GFameHYDUX?pid=ImgGn"
-            title="EMBS: Engineering in Medicine & Biology Society"
-          />
-        </div>
-
-        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
-      </ChaptersItem>
-      <!-- IAS -->
-      <ChaptersItem
-        class="w-[579px]"
-        
-      >
-        <div
-          slot="image"
-          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
-        >
-        <YouTube
-            id="39_BPJBv9yg"
-            poster="https://th.bing.com/th/id/OIG4.0RZ4HANBHNDreQ44NR9r?pid=ImgGn"
-            title="IAS: Industry Applications Society"
-          />
-        </div>
-
-        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
-      </ChaptersItem>
-      <!-- CAS -->
-      <ChaptersItem
-        class="w-[579px]"
-        
-      >
-        <div
-          slot="image"
-          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
-        >
-        <YouTube
-            id="bBOPJrMYa-U"
-            poster="https://th.bing.com/th/id/OIG2.Twg6O19RyidEK3t5mNdk?w=1024&h=1024&rs=1&pid=ImgDetMain"
-            title="CAS: Circuits & Systems Society"
-          />
-        </div>
-
-        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
-      </ChaptersItem>
-      <!-- RAS -->
-      <ChaptersItem
-        class="w-[579px]"
-        
-      >
-        <div
-          slot="image"
-          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
-        >
-        <YouTube
-            id="v0U6N-NbYSI"
-            poster="https://th.bing.com/th/id/OIG1.RMggfFlSzZ3MmpQuyvB4?w=1024&h=1024&rs=1&pid=ImgDetMain"
-            title="RAS: Robotics & Automation Society"
-          />
-        </div>
-
-        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
-      </ChaptersItem>
-      <!-- CS -->
-      <ChaptersItem 
-        class="w-[579px]" 
-        
-      >
-        <div
-          slot="image"
-          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
-        >
-        <YouTube
-            id="93eZ-aHc984"
-            poster="https://th.bing.com/th/id/OIG3.iwj220lnDzesrUU0RCil?pid=ImgGn"
-            title="CS: Computer Society"
-          />
-        </div>
-
-        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
-      </ChaptersItem>
-      <!-- PES -->
-      <ChaptersItem
-        class="w-[579px]"
-        
-      >
-        <div
-          slot="image"
-          class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
-        >
-        <YouTube
-            id="C_q8QtOGdQs"
-            poster="https://th.bing.com/th/id/OIG1.N8nnTFzZfN6EBIycSXxs?w=1024&h=1024&rs=1&pid=ImgDetMain"
-            title="PES: Power Energy Society" 
-          />
-        </div>
-
-        <p slot="content" class="max-w-xl text-base md:text-lg"></p>
-      </ChaptersItem>
-    </section>
+<section
+class="w-full max-w-[1400px]
+grid lg:grid-cols-10 auto-rows-[20rem] gap-x-12 gap-y-8
+mx-auto p-6 md:p-12 lg:p-20"
+>
+<!-- WIEE -->
+<ChaptersItem class="w-[579px]">
+  <div
+    slot="image"
+    class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+  >
+    <YouTube
+      id="K7Q7EWXBQLg"
+      params="start=57&end=75"
+      poster="https://th.bing.com/th/id/OIG2.wfocaMi1n3HAcO5TjjWz?w=1024&h=1024&rs=1&pid=ImgDetMain"
+      title="WIE: Women In Engineering"
+    />
   </div>
+
+  <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+</ChaptersItem>
+<!-- APS -->
+<ChaptersItem class="w-[579px]">
+  <div
+    slot="image"
+    class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+  >
+    <YouTube
+      id="dPQd4AazIA0"
+      poster="https://th.bing.com/th/id/OIG1.xJPWLPoWRTrpAbMsSfkn?pid=ImgGn"
+      title="AP-S: Antennas & Propagation Society"
+    />
+  </div>
+  <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+</ChaptersItem>
+<!-- EMBS -->
+<ChaptersItem class="w-[579px]">
+  <div
+    slot="image"
+    class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+  >
+    <YouTube
+      id="Ss4kRG1fzrQ"
+      poster="https://th.bing.com/th/id/OIG3.MCNgyEb7G1GFameHYDUX?pid=ImgGn"
+      title="EMBS: Engineering in Medicine & Biology Society"
+    />
+  </div>
+
+  <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+</ChaptersItem>
+<!-- IAS -->
+<ChaptersItem class="w-[579px]">
+  <div
+    slot="image"
+    class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+  >
+    <YouTube
+      id="39_BPJBv9yg"
+      poster="https://th.bing.com/th/id/OIG4.0RZ4HANBHNDreQ44NR9r?pid=ImgGn"
+      title="IAS: Industry Applications Society"
+    />
+  </div>
+
+  <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+</ChaptersItem>
+<!-- CAS -->
+<ChaptersItem class="w-[579px]">
+  <div
+    slot="image"
+    class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+  >
+    <YouTube
+      id="bBOPJrMYa-U"
+      poster="https://th.bing.com/th/id/OIG2.Twg6O19RyidEK3t5mNdk?w=1024&h=1024&rs=1&pid=ImgDetMain"
+      title="CAS: Circuits & Systems Society"
+    />
+  </div>
+
+  <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+</ChaptersItem>
+<!-- RAS -->
+<ChaptersItem class="w-[579px]">
+  <div
+    slot="image"
+    class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+  >
+    <YouTube
+      id="v0U6N-NbYSI"
+      poster="https://th.bing.com/th/id/OIG1.RMggfFlSzZ3MmpQuyvB4?w=1024&h=1024&rs=1&pid=ImgDetMain"
+      title="RAS: Robotics & Automation Society"
+    />
+  </div>
+
+  <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+</ChaptersItem>
+<!-- CS -->
+<ChaptersItem class="w-[579px]">
+  <div
+    slot="image"
+    class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+  >
+    <YouTube
+      id="93eZ-aHc984"
+      poster="https://th.bing.com/th/id/OIG3.iwj220lnDzesrUU0RCil?pid=ImgGn"
+      title="CS: Computer Society"
+    />
+  </div>
+
+  <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+</ChaptersItem>
+<!-- PES -->
+<ChaptersItem class="w-[579px]">
+  <div
+    slot="image"
+    class="absolute bottom-0 left-0 top-0 h-full w-full bg-blue-700 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity group-hover:scale-110 transition duration-1000 ease-in-out"
+  >
+    <YouTube
+      id="C_q8QtOGdQs"
+      poster="https://th.bing.com/th/id/OIG1.N8nnTFzZfN6EBIycSXxs?w=1024&h=1024&rs=1&pid=ImgDetMain"
+      title="PES: Power Energy Society"
+    />
+  </div>
+
+  <p slot="content" class="max-w-xl text-base md:text-lg"></p>
+</ChaptersItem>
 </section>
